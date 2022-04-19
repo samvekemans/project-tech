@@ -1,4 +1,4 @@
-### Project tech
+# Project tech
 Sam Vekemans
 Ik ga een matching applicatie bouwen voor CMD amsterdam.
 
