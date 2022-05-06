@@ -1,1 +1,15 @@
-## hello
+Job Stories:
+1. De gebruiker wil enerzijds als oudere een persoon om zich gezelschap te houden, te helpen bij het huishouden of zorg te verlenen en anderzijds de jongeren in de zorg willen hun tijd doorbrengen met ouderen of ervaring op te doen voor zijn/haar opleiding dus wil de gebruiker de app downloaden.
+2. Zowel de oudere als de jongere/zorgverlener willen beide kunnen registreren en hierbij voorkeuren aangeven van wat zij verwachten van de ander
+3. De gebruiker wil kunnen inloggen.
+4. De gebruiker wil een persoon vinden die aan zijn/haar voorkeuren voldoet
+5. De gebruiker wil meer over de ander te weten komen zowel als een afspraak inplannen. 
+
+Ik kies voor de tweede Job Storie: De gebruikers willen beide kunnen registreren en hierbij voorkeuren aangeven van wat zij verwachten van de ander
+
+Requirement list bij deze Job storie:
+1. De ouderen wil gemakkelijk aan kunnen geven wat hij/zij van de ander verwacht
+2. De app moet voor de ouderen eenvouding te bedienen zijn
+3. De locatie van de gebruiker moet kunnen worden opgeslagen
+4. De jongeren moet zijn/haar CV kunnen uploaden
+5. De informatie moet worden opgeslagen en gekoppeld worden aan de persoon
