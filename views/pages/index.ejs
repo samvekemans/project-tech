@@ -3,26 +3,25 @@
 <head>
   <%- include('../partials/head'); %>
 </head>
-<body class="container">
 
+<body>
 <header>
   <%- include('../partials/header'); %>
 </header>
 
 <main>
-  <div class="jumbotron">
-    <h1>This is great</h1>
-    <p> <%= tagline %> </p>
-  </div>
-  <ul>
-    <%  mascots.forEach(function(mascot) { %>
-      <li>
-        <strong><%= mascot.name %></strong>
-        representing <%= mascot.organization %>,
-        born <%= mascot.birth_year %>
-      </li>
-    <% }); %>
-  </ul>
+    <form action="/" method="post" class="flex flex-col w-96 ">
+      <label for="name">Naam</label>
+      <input name="name" type="text" class="border border-black border-solid">
+      
+      <label for="age">Leeftijd</label>
+      <input name="age" type="text" class="border border-black border-solid">
+
+      <label for="description">Over jou</label>
+      <input name="description" type="text" class="border border-black border-solid">
+
+      <button type="submit" class="bg-black text-white text-left mr-auto px-3 py-1 mt-2">submit</button> 
+    </form>
 </main>
 
 <footer>
