@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
+var data = [];
+const port = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -8,26 +11,35 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', (req, res) => {
-  var mascots = [
-    { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
-    { name: 'Tux', organization: "Linux", birth_year: 1996},
-    { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
-  ];
-  var tagline = "No programming concept is complete without a cute animal mascot.";
-
   res.render('pages/index', {
-    mascots: mascots,
-    tagline: tagline
+    data: data
   });
 });
 
+app.get('/error', (req, res) => {
+  res.render('pages/error', {
+    
+  });
+});
+
+app.use(express.json());
+app.use(express.urlencoded());
+
+app.post('/', (req, res)=> {
+  data.push({
+    name: req.body.name,
+    age: req.body.age,
+    description: req.body.description
+  })
+  res.redirect('/')
+});
 
 
 app.use((req, res, next) => {
-  res.send('Pagina niet gevonden', 404)
+  res.redirect('/error')
 })
 
 
-app.use(express.static(__dirname + '/public'));
 
-app.listen(3000);
+
+app.listen(port);

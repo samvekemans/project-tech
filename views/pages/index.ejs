@@ -4,13 +4,19 @@
   <%- include('../partials/head'); %>
 </head>
 
-<body>
+<body class="">
 <header>
   <%- include('../partials/header'); %>
 </header>
 
 <main>
     <form action="/" method="post" class="flex flex-col w-96 ">
+
+      <label for="pictureUser">
+        <img src="/images/profile.png" alt="user" class="img">
+      </label>
+      <input id="pictureUser" type="file" name="pictureUser" class="pictureInput">
+
       <label for="name">Naam</label>
       <input name="name" type="text" class="border border-black border-solid">
       
@@ -19,6 +25,9 @@
 
       <label for="description">Over jou</label>
       <input name="description" type="text" class="border border-black border-solid">
+
+      <label for=""></label>
+      <input type="text" name="" id="">
 
       <button type="submit" class="bg-black text-white text-left mr-auto px-3 py-1 mt-2">submit</button> 
     </form>
