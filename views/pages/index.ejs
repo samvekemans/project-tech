@@ -4,43 +4,21 @@
   <%- include('../partials/head'); %>
 </head>
 
-<body class="">
+<body class="index">
 <header>
   <%- include('../partials/header'); %>
 </header>
 
 <main>
-    <form action="/" method="post" class="flex flex-col w-96 ">
+  
+  <section>
+    <h1>Care for you</h1>
 
-      <label for="pictureUser">
-        <img src="/images/profile.png" alt="user" class="img">
-      </label>
-      <input id="pictureUser" type="file" name="pictureUser" class="pictureInput">
+    <p>Ben jij een ouderen opzoek naar gezelschap of naar zorg in je huis? Dan ben je op de goede plek, je kunt hier iemand vinden die je kan helpen of gezelschap kan houden!</p>
+    <p>Ben jij een persoon die graag ouderen wil helpen met huishoudelijke klusjes of de ouderen gezelschap wilt houden meld je dan hier beneden aan!</p>
 
-      <label for="name">Naam</label>
-      <input name="name" type="text" class="border border-black border-solid">
-      
-      <label for="age">Leeftijd</label>
-      <input name="age" type="text" class="border border-black border-solid">
-
-      <label for="description">Over jou</label>
-      <input name="description" type="text" class="border border-black border-solid">
-
-      <div>
-        <h3>Waar zoek je naar</h3>
-        <input id="cleaner" type="radio">
-        <label for="cleaner">Schoonmaker</label>
-
-        <label for=""></label>
-        <input type="radio">
-
-        <label for=""></label>
-        <input type="radio">
-      </div>
-      
-
-      <button type="submit" class="bg-black text-white text-left mr-auto px-3 py-1 mt-2">submit</button> 
-    </form>
+    <a href="/ouderen">Registreren →</a>
+  </section>
 </main>
 
 <footer>
