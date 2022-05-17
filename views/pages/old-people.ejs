@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="old-people">
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div>
+        <a href="/ouderen">Ouderen</a>
+        <a href="/zorgmedewerker">Zorgmedewerker</a>
+    </div>
+
+    <form action="/" method="post" class="flex flex-col w-96 ">
+
+      <label for="pictureUser">
+        <img src="/images/profile.png" alt="user" class="img">
+      </label>
+      <input id="pictureUser" type="file" name="pictureUser" class="pictureInput">
+
+      <label for="name">Naam</label>
+      <input name="name" type="text">
+      
+      <label for="age">Leeftijd</label>
+      <input name="age" type="text">
+
+      <label for="description">Over jou</label>
+      <input name="description" type="text">
+
+      <div>
+        <h3>Waar zoek je naar</h3>
+        <input id="cleaner" type="radio">
+        <label for="cleaner">Schoonmaker</label>
+
+        <input id="company" type="radio">
+        <label for="company">Gezelschap</label>
+
+        <input id="care" type="radio">
+        <label for="care">Zorg</label>
+      </div>
+      
+      <label for="experience">Ervaring van de zorgmedewerker (in maanden)</label>
+      <input type="range" id="experience" min="0" max="100">
+      
+      
+
+
+      <button type="submit">submit</button> 
+    </form>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
