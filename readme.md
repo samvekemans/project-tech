@@ -17,11 +17,11 @@ Met deze app kun je registreren en hierbij je voorkeuren aangeven, hierna kun je
 ### Git
 Zorg ervoor dat je git op je device gesinstalleerd is. Dat kun je doen door
 
-$ sudo apt-get update $ sudo apt-get install git
+`$ sudo apt-get update` `$ sudo apt-get install git`
 
 ## Clonen
 Om de applicatie lokaal te draaien zal je de repository moeten clonen naar jou computer dit doe je door deze command in de terminal te runnen:
-$ git clone https://github.com/samvekemans/project-tech .
+`$ git clone https://github.com/samvekemans/project-tech .`
 
 
 
