@@ -21,6 +21,7 @@ Zorg ervoor dat je git op je device gesinstalleerd is. Dat kun je doen door
 
 ## Clonen
 Om de applicatie lokaal te draaien zal je de repository moeten clonen naar jou computer dit doe je door deze command in de terminal te runnen:
+
 `$ git clone https://github.com/samvekemans/project-tech .`
 
 
