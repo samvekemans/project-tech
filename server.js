@@ -1,26 +1,27 @@
 const express = require('express');
+
 const app = express();
-let data = [];
+const data = [];
 const port = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   res.render('pages/index', {
-    data: data
+    data,
   });
 });
 
 app.get('/ouderen', (req, res) => {
   res.render('pages/old-people', {
-    data: data
+    data,
   });
 });
 
 app.get('/zorgmedewerker', (req, res) => {
   res.render('pages/care-giver', {
-    data: data
+    data,
   });
 });
 
@@ -31,15 +32,15 @@ app.get('/error', (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.post('/', (req, res)=> {
+app.post('/', (req, res) => {
   data.push({
     name: req.body.name,
-  })
-  res.redirect('/')
+  });
+  res.redirect('/');
 });
 
 app.use((req, res, next) => {
-  res.redirect('/error')
-})
+  res.redirect('/error');
+});
 
 app.listen(port);
