@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="old-people">
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div>
+        <a href="/ouderen">Ouderen</a>
+        <a href="/zorgmedewerker">Zorgmedewerker</a>
+    </div>
+
+    <form action="/" method="post">
+
+      <label for="pictureUser">
+        <img src="/images/profile.png" alt="user" class="img" width="200">
+      </label>
+      <input id="pictureUser" type="file" name="pictureUser" class="pictureInput">
+
+      <label for="name">Naam</label>
+      <input name="name" type="text" required>
+      
+      <label for="age">Leeftijd</label>
+      <input name="age" type="text" required>
+
+      <label for="description">Over jou</label>
+      <input name="description" type="text" required>
+
+      <fieldset>
+        <legend><%= radioTitle %></legend>
+        <input value="Schoonmaker" id="cleaner" type="checkbox" name="help[]">Schoonmaker
+        <input value="Gezelschap" id="company" type="checkbox" name="help[]">Gezelschap
+        <input value="Zorg" id="care" type="checkbox" name="help[]">Zorg
+      </fieldset>
+      
+      <label for="experience"><%= slider.title %> </label>
+      <input name="experience" type="number" id="experience" min="<%= slider.min %> " max="<%= slider.max %>">
+      
+      <button type="submit">submit</button> 
+    </form>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="index">
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <% users.forEach((user) =>{ %>
+        <h1>Naam: <%= user.name %> </h1>
+        <p>Leeftijd <%= user.age %> </p>
+        <p>Over <%= user.name %>:  <%= user.aboutUser %> </p>
+        <p>Hulp:</p> 
+        <ul>
+        <% user.help.forEach((help)=> { %>
+            <li><%= help %> </li>
+        <% }); %> 
+        </ul>
+
+        
+    <% }); %> 
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+</body>
+</html> 
