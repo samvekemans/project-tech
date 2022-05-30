@@ -4,24 +4,38 @@
   <%- include('../partials/head'); %>
 </head>
 
-<body class="index">
+<body class="users">
 <header>
   <%- include('../partials/header'); %>
 </header>
 
 <main>
     <% users.forEach((user) =>{ %>
+      <article>
+        <h1><%= user.accountType %></h1>
+        <img src="<%= user.image %>" alt="profiel foto">
         <h1>Naam: <%= user.name %> </h1>
         <p>Leeftijd <%= user.age %> </p>
         <p>Over <%= user.name %>:  <%= user.aboutUser %> </p>
         <p>Hulp:</p> 
         <ul>
-        <% user.help.forEach((help)=> { %>
-            <li><%= help %> </li>
-        <% }); %> 
+          <% user.help.forEach((help)=> { %>
+              <li><%= help %> </li>
+          <% }); %> 
         </ul>
-
-        
+        <p><%= oldTradesTitle %></p>
+        <ul>
+          <% user.oldTrades.forEach((oldTrade)=> { %>
+              <li><%= oldTrade %> </li>
+          <% }); %> 
+        </ul>
+        <p><%= careTradesTitle %></p>
+        <ul>
+          <% user.careTrades.forEach((careTrade)=> { %>
+              <li><%= careTrade %> </li>
+          <% }); %> 
+        </ul>
+      </article>
     <% }); %> 
 </main>
 
