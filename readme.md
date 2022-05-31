@@ -2,8 +2,12 @@
 Sam Vekemans
 Ik ga een matching applicatie bouwen voor CMD amsterdam.
 
+# Care for you
+
+[[/images/front-page.png|front-page]]
 ## Mijn idee
 Een matching applicatie voor enerzijds ouderen die een persoon zoeken om hun gezelschap te houden, hun huis schoon kunnen maken of zorg kunnen verlenen. Anderzijds een jongere die ouderen willen ondersteunen of jongeren die een zorgopleiding doen en ervaring op willen doen.  
+
 
 ## Feature
 Met deze app kun je registreren en hierbij je voorkeuren aangeven, hierna kun je jou profiel bekijken en kun je alle profielen in de database bekijken. 
@@ -12,6 +16,13 @@ Met deze app kun je registreren en hierbij je voorkeuren aangeven, hierna kun je
 - Express
 - Nodemon
 - Ejs
+- body-parser
+- dotenv
+- mongodb
+- mongosh
+- multer
+- sass
+- slug
 
 ## Installatie
 ### Git

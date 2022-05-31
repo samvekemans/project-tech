@@ -11,31 +11,38 @@
 
 <main>
     <% users.forEach((user) =>{ %>
-      <article>
-        <h1><%= user.accountType %></h1>
-        <img src="<%= user.image %>" alt="profiel foto">
-        <h1>Naam: <%= user.name %> </h1>
-        <p>Leeftijd <%= user.age %> </p>
-        <p>Over <%= user.name %>:  <%= user.aboutUser %> </p>
-        <p>Hulp:</p> 
-        <ul>
-          <% user.help.forEach((help)=> { %>
-              <li><%= help %> </li>
-          <% }); %> 
-        </ul>
-        <p><%= oldTradesTitle %></p>
-        <ul>
-          <% user.oldTrades.forEach((oldTrade)=> { %>
-              <li><%= oldTrade %> </li>
-          <% }); %> 
-        </ul>
-        <p><%= careTradesTitle %></p>
-        <ul>
-          <% user.careTrades.forEach((careTrade)=> { %>
-              <li><%= careTrade %> </li>
-          <% }); %> 
-        </ul>
-      </article>
+      <section>
+        <a href="/<%= user._id %> ">
+          <div style="background-image: url('<%= user.image %>');">
+          </div>
+
+          <img src="<%= user.image %> " alt="">
+          
+          <article>
+            <h1><%= user.name %> </h1>
+            <p>Leeftijd: <%= user.age %> </p>
+          </article>
+
+          <article>
+            <p>Hulp:</p> 
+            <ul>
+              <% user.help.forEach((help)=> { %>
+                  <li><%= help %> </li>
+              <% }); %> 
+            </ul>
+          </article>
+          
+          <article>
+            <p><%= oldTradesTitle %></p>
+            <ul>
+              <% user.oldTrades.forEach((oldTrade)=> { %>
+                  <img src="/images/<%= oldTrade %>.png" alt="icon">
+              <% }); %> 
+            </ul>
+          </article>
+         
+        </a>
+      </section>
     <% }); %> 
 </main>
 

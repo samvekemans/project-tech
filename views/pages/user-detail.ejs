@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="user-detail">
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <h1><%= user.name %></h1>
+    <p>Over <%= user.name %>:  <%= user.aboutUser %> </p>
+    <article>
+        <p><%= careTradesTitle %></p>
+        <ul>
+          <% user.careTrades.forEach((careTrade)=> { %>
+              <img src="/images/<%= careTrade %>.png" alt="icon">
+          <% }); %> 
+        </ul>
+      </article>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+</body>
+</html> 

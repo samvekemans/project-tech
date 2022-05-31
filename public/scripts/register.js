@@ -1,24 +1,17 @@
-const pictureInput = document.getElementById('pictureUser');
 const img = document.querySelector('.img');
 const oldButton = document.querySelector('#old-person');
 const careButton = document.querySelector('#caregiver');
 
-function profilePicture() {
-  if (pictureInput) {
-    pictureInput.addEventListener('change', (event) => {
-      if (event.target.files.length !== 0) {
-        const imgFile = event.target.files[0];
-        const imgSrc = URL.createObjectURL(imgFile);
-
-        img.src = imgSrc;
-      }
-    });
+document.getElementById('pictureUser').addEventListener('change', (event) => {
+  if (event.target.files.length !== 0) {
+    const imgFile = event.target.files[0];
+    const imgSrc = URL.createObjectURL(imgFile);
+    img.src = imgSrc;
   }
-}
-profilePicture();
+});
 
 function styleButton() {
-  if(window.location.pathname === '/ouderen'){
+  if (window.location.pathname === '/ouderen') {
     oldButton.style.backgroundColor = '#519188';
     oldButton.style.boxShadow = '0px 0px 5px #519188';
     oldButton.style.fontWeight = 'bold';
@@ -28,7 +21,7 @@ function styleButton() {
     careButton.style.boxShadow = 'none';
     careButton.style.fontWeight = 'normal';
   }
-  if(window.location.pathname === '/zorgmedewerker'){
+  if (window.location.pathname === '/zorgmedewerker') {
     careButton.style.backgroundColor = '#519188';
     careButton.style.boxShadow = '0px 0px 5px #519188';
     careButton.style.fontWeight = 'bold';
@@ -40,4 +33,4 @@ function styleButton() {
   }
 }
 
-styleButton()
+styleButton();
