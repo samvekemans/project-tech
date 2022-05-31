@@ -22,7 +22,7 @@ const upload = multer({
 }).single('pictureUser');
 
 // Sets the port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // Variables
 let db;
