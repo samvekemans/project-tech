@@ -10,7 +10,8 @@ Een matching applicatie voor enerzijds ouderen die een persoon zoeken om hun gez
 
 
 ## Feature
-Met deze app kun je registreren en hierbij je voorkeuren aangeven, hierna kun je jou profiel bekijken en kun je alle profielen in de database bekijken. 
+- Registreren en je voorkeuren aangeven
+- Andere account uit de database bekijken met filters op basis van jou voorkeuren
 
 ## Packages geinstallerd 
 - Express
@@ -34,6 +35,14 @@ Zorg ervoor dat je git op je device gesinstalleerd is. Dat kun je doen door
 Om de applicatie lokaal te draaien zal je de repository moeten clonen naar jou computer dit doe je door deze command in de terminal te runnen:
 
 `$ git clone https://github.com/samvekemans/project-tech .`
+
+### Installation guide
+Om plugins te instaleren gebruik je:
+`npm install`
+Om het project als developer te draaien:
+`npm run dev`
+Voor productie:
+`npm run start`
 
 
 
