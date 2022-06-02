@@ -67,7 +67,6 @@ app.get('/ouderen', (req, res) => {
     valueType,
     trades,
     iconTitles,
-    errormessage,
   });
 });
 
@@ -89,7 +88,6 @@ app.get('/zorgmedewerker', (req, res) => {
     valueType,
     trades,
     iconTitles,
-    errormessage,
   });
 });
 

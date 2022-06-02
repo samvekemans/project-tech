@@ -5,9 +5,8 @@ Ik ga een matching applicatie bouwen voor CMD amsterdam.
 # Care for you
 
 ![front-page](/public/images/front-page.png)
-## Mijn idee
-Een matching applicatie voor enerzijds ouderen die een persoon zoeken om hun gezelschap te houden, hun huis schoon kunnen maken of zorg kunnen verlenen. Anderzijds een jongere die ouderen willen ondersteunen of jongeren die een zorgopleiding doen en ervaring op willen doen.  
-
+## Mijn Concept
+Een matching applicatie voor enerzijds ouderen die een persoon zoeken om hun gezelschap te houden, hun huis schoon kunnen maken of zorg kunnen verlenen. Anderzijds een zorgmedewerker die ouderen willen ondersteunen.  
 
 ## Feature
 - Registreren en je voorkeuren aangeven
@@ -49,4 +48,12 @@ Voor productie:
 Copyright © 2022 Pip Harsveld.<br>
 This project is [MIT](https://github.com/samvekemans/project-tech/blob/main/LICENSE) licensed.
 
+## Bronnen
 
+- npm: multer. (2022, 30 mei). Npm. Geraadpleegd op 15 mei 2022, van https://www.npmjs.com/package/multer
+- npm: mongodb. (2022, 11 mei). Npm. Geraadpleegd op 30 mei 2022, van https://www.npmjs.com/package/mongodb
+- mongoDB. (2022, 25 mei). MongoDB docs. Geraadpleegd op 2 juni 2022, van https://www.mongodb.com/docs/
+- N. (2022, 10 mei). Documentation. Node.Js. Geraadpleegd op 2 juni 2022, van https://nodejs.org/en/docs/
+- Johansson, E. (2021, 23 september). Setting up SASS in an Express app⚙️. DEV Community. Geraadpleegd op 16 mei 2022, van https://dev.to/elvelive/setting-up-sass-in-an-express-app-jk4
+- Sev, C. (2021, 5 mei). How To Use EJS to Template Your Node Application. DigitalOcean Community. Geraadpleegd op 29 april 2022, van https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+- EJS -- Embedded JavaScript templates. (z.d.). EJS. Geraadpleegd op 30 april 2022, van https://ejs.co/
