@@ -44,5 +44,9 @@ Om het project als developer te draaien:
 Voor productie:
 `npm run start`
 
+## LICENSE
+
+Copyright © 2022 Pip Harsveld.<br>
+This project is [MIT](https://github.com/samvekemans/project-tech/blob/main/LICENSE) licensed.
 
 

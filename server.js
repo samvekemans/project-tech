@@ -29,6 +29,7 @@ let db;
 let query = {};
 let oldTradesTitle = '';
 let careTradesTitle = '';
+let errormessage = '';
 
 // Express
 const app = express();
@@ -66,6 +67,7 @@ app.get('/ouderen', (req, res) => {
     valueType,
     trades,
     iconTitles,
+    errormessage,
   });
 });
 
@@ -87,6 +89,7 @@ app.get('/zorgmedewerker', (req, res) => {
     valueType,
     trades,
     iconTitles,
+    errormessage,
   });
 });
 

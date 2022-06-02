@@ -10,30 +10,30 @@
 </header>
 
 <main>
+  <section class="x-overflow">
     <% users.forEach((user) =>{ %>
-      <section>
+      <section class="section">
         <a href="/<%= user._id %> ">
-          <div style="background-image: url('<%= user.image %>');">
-          </div>
-
-          <img src="<%= user.image %> " alt="">
           
           <article>
             <h1><%= user.name %> </h1>
-            <p>Leeftijd: <%= user.age %> </p>
+            <div style="background-image: url('<%= user.image %>');">
+            </div>
+            <img src="<%= user.image %> " alt="">
           </article>
-
+          
           <article>
-            <p>Hulp:</p> 
+            <p><strong>Leeftijd:</strong> <span><%= user.age %></span> </p>
+            <p><strong>Hulp:</strong></p> 
             <ul>
               <% user.help.forEach((help)=> { %>
-                  <li><%= help %> </li>
+                    <li><%= help %></li>
               <% }); %> 
             </ul>
           </article>
           
           <article>
-            <p><%= oldTradesTitle %></p>
+            <p><strong><%= oldTradesTitle %></strong></p>
             <ul>
               <% user.oldTrades.forEach((oldTrade)=> { %>
                   <img src="/images/<%= oldTrade %>.png" alt="icon">
@@ -43,11 +43,17 @@
          
         </a>
       </section>
-    <% }); %> 
-</main>
+      <% }); %> 
+    </section>
+    <article>
+      <button class="previous"><--</button>
+      <button class="next">--></button>
+    </article>
+  </main>
 
 <footer>
   <%- include('../partials/footer'); %>
 </footer>
+<script type="text/javascript" src="/scripts/users.js"></script>
 </body>
 </html> 

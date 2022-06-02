@@ -19,10 +19,11 @@
       <input name="account" type="hidden" id="account" value="<%= valueType %>">
 
         <article>
+          <p><%= errormessage %> </p>
           <label for="pictureUser">
             <img src="/images/profile.png" alt="user" class="img" height="200">
           </label>
-          <input id="pictureUser" type="file" name="pictureUser" class="pictureInput">
+          <input id="pictureUser" type="file" name="pictureUser" class="pictureInput"  accept="image/png, image/jpeg" required >
         </article>
 
         <article>
@@ -32,7 +33,7 @@
 
         <article>
           <label for="age">Leeftijd</label>
-          <input name="age" type="text" required>
+          <input name="age" type="number" required>
         </article>
 
         <article>
