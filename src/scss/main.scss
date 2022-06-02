@@ -378,4 +378,29 @@ header>nav{
   font-size: 1.1em;
 }
 
+.next{
+  background-color: #519188;
+  color: wheat;
+  border: none;
+  padding: .5em 2em;
+  margin-left: 1em;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: #519188 0px 0px 10px;
+  }
+}
+
+.previous{
+  background-color: #519188;
+  color: wheat;
+  border: none;
+  padding: .5em 2em;
+  margin-right: 1em;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: #519188 0px 0px 10px;
+  }
+}
 
