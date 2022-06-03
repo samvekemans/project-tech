@@ -29,7 +29,6 @@ let db;
 let query = {};
 let oldTradesTitle = '';
 let careTradesTitle = '';
-let errormessage = '';
 
 // Express
 const app = express();
@@ -122,6 +121,7 @@ app.get('/:userId', async (req, res) => {
 
 // Post from register with an upload from multer
 app.post('/ouderen', upload, async (req, res) => {
+  console.log(req.body);
   // New user variable
   const user = {
     accountType: req.body.account,
@@ -132,6 +132,10 @@ app.post('/ouderen', upload, async (req, res) => {
     image: `uploads/${req.file.filename}`,
     oldTrades: req.body.oldPersonTrades,
     careTrades: req.body.careGiverTrades,
+    city: req.body.city,
+    houseNumber: req.body.houseNumber,
+    street: req.body.street,
+    postcode: req.body.zipcode[0],
   };
 
   // putting new user in database insertOne()

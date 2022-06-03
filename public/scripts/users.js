@@ -12,3 +12,4 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => {
   carouselWrapper.scrollLeft -= carouselItem.clientWidth;
 });
+
